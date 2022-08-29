@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html.home, body.home {
     height: 100%;
 }
 
