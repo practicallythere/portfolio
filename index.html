@@ -28,7 +28,8 @@
 
 </head>
 
-<body>
+<body style="visibility: hidden;"> /*FOUC*/
+  <script>0</script>
   <div id="mainWrapper">
   <h1><a href="https://docs.google.com/viewer?url=raw.githubusercontent.com/practicallythere/portfolio/main/assets/RD_Portfolio.pdf">Portfolio</a></h1> 
   <h1 id="contact"><a HREF="mailto:&#114;&#111;&#98;&#98;&#105;&#101;&#46;&#100;&#97;&#119;&#115;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Contact</a></h1>
@@ -38,5 +39,19 @@
 
 
   <script src="js/scripts.js"></script>
+  <script> 
+    // Helper function
+let domReady = (cb) => {
+  document.readyState === 'interactive' || document.readyState === 'complete'
+    ? cb()
+    : document.addEventListener('DOMContentLoaded', cb);
+};
+
+domReady(() => {
+  // Display body when DOM is loaded
+  document.body.style.visibility = 'visible';
+});
+  </script>
+  <noscript><style>body { visibility: visible; }</style></noscript>
 </body>
 </html>
