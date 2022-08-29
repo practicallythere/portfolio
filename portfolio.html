@@ -46,7 +46,7 @@
         embedMode: "IN_LINE",
         showDownloadPDF: false,
         showZoomControl: false,
-	defaultViewMode: "CONTINUOUS", 
+	defaultViewMode: "FIT_PAGE", 
         showZoomControl: true
      }	
 	  
@@ -54,7 +54,7 @@
 	var adobeDCView = new AdobeDC.View({clientId: "40b02d0b359841acb3d9c870b89db2ee", divId: "adobe-dc-view"});
 	adobeDCView.previewFile({
 		content:{location: {url: "/assets/RD_Portfolio.pdf"}},
-		metaData:{fileName: "RD_Portfolio.pdf"}
+		metaData:{fileName: "Portfolio.pdf"}
 	}, previewConfig);
      });
 </script>
