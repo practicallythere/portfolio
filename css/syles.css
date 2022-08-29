@@ -7,9 +7,14 @@ html.home, body.home {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'RD_Diletto', 'DM Sans', sans-serif;
     margin: 0
 
+}
+
+@font-face {
+  font-family: "RD_Diletto";
+  src: url("/assets/RD_Diletto-Regular.woff") format("woff");
 }
 
 #mainWrapper {
