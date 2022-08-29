@@ -21,6 +21,11 @@ body {
     flex-direction: column;
 }
 
+#iframe-adobe-dc-view {
+    max-width: 139vh; /*fit entire page height on screen for 1.4142 ratio page*/
+    margin: 0 auto;
+}
+
 h1 {
 *color: gray;
 max-width: 100%;
