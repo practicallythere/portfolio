@@ -31,8 +31,15 @@
 <body>
 
  
-  <div id="mainWrapper"></div>
-  <script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
+  <div id="mainWrapper">
+	
+	<div id="adobe-dc-view"></div>
+	
+	</div>
+  
+	
+	
+	<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
   <script type="text/javascript">
      // Store the UI options in a constant
      const previewConfig = {
@@ -43,7 +50,7 @@
      }	
 	  
      document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-	var adobeDCView = new AdobeDC.View({clientId: "40b02d0b359841acb3d9c870b89db2ee", divId: "mainWrapper"});
+	var adobeDCView = new AdobeDC.View({clientId: "40b02d0b359841acb3d9c870b89db2ee", divId: "adobe-dc-view"});
 	adobeDCView.previewFile({
 		content:{location: {url: "/assets/RD_Portfolio.pdf"}},
 		metaData:{fileName: "RD_Portfolio.pdf"}
