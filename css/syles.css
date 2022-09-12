@@ -22,7 +22,7 @@ body {
 }
 
 #portfolioWrapper {
-    max-width: 139vh; /*fit entire page height on screen for 1.4142 ratio page*/
+    max-width: min(139vh, 1600px); /* 139vh; fit entire page height on screen for 1.4142 ratio page*/
     margin: 0 auto;
 }
 
